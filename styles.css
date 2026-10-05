@@ -1,0 +1,203 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 1;
+  display: none;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+.main__logo {
+  width: 129px;
+  height: 24px;
+  margin: 0 0 50px;
+  align-self: flex-start;
+}
+.main__title {
+  text-align: center;
+  color: #20264c;
+}
+.main__form {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__group {
+  display: flex;
+  flex-direction: column;
+}
+.main__label {
+  margin: 0 0 5px;
+  font-size: 14px;
+  color: #515674;
+}
+.main__input {
+  width: 328px;
+  height: 47px;
+  padding: 0 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 68px;
+}
+.main__input:focus {
+  border-color: #13110e;
+}
+.main__input:focus-visible {
+  outline: 1px solid #000000;
+}
+.main__input::-moz-placeholder {
+  color: #20264c;
+}
+.main__input::placeholder {
+  color: #20264c;
+}
+.main__button {
+  width: 328px;
+  height: 53px;
+  border: none;
+  border-radius: 40px;
+  background-color: #ff941a;
+  color: #fff;
+}
+.main__password-wrapper {
+  position: relative;
+  width: 328px;
+}
+.main__eye-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.main__input--password {
+  padding: 0 50px 0 24px;
+}
+
+.auth-prompt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 32px auto 0;
+  background-color: rgba(7, 14, 56, 0.0196078431);
+  padding: 16px 20px;
+  border-radius: 16px;
+}
+.auth-prompt__text {
+  color: #20264c;
+}
+.auth-prompt__link {
+  text-decoration: none;
+  color: #ff941a;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 328px;
+  margin: 10px 0 0;
+}
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.checkbox__input:checked + .checkbox__box {
+  background-color: #ff941a;
+  border-color: #ff941a;
+  background-image: url(img/Feather\ Icons/Vector.png);
+}
+.checkbox__input:focus-visible + .checkbox__box {
+  outline: 2px solid #13110e;
+  outline-offset: 2px;
+}
+.checkbox__box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.checkbox__text {
+  width: 290px;
+  font-size: 12px;
+  color: #515674;
+  line-height: 1.4;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #070e38;
+    padding: 70px 112px;
+    max-width: 50%;
+    /* Сюда же будешь добавлять padding для внутренних отступов сайдбара */
+  }
+  .sidebar__logo {
+    width: 188px;
+    height: 35px;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+  .features__title {
+    margin: 0;
+    font-size: 24px;
+  }
+  .features__list {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .features__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .main__logo {
+    display: none;
+  }
+  .main {
+    margin-top: 70px;
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=styles.css.map */

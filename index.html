@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img
+          src="img/logomoon 2.png"
+          alt="логотип луна"
+          class="sidebar__logo"
+        />
+        <div class="features">
+          <h2 class="features__title">Возможности онлайн приложения</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <img
+                src="img/check-circle.png"
+                alt="Галочка"
+                class="features__icon"
+              />
+              <span class="features__text"
+                >Клиенты записываются 24/7 в удобное для вас время</span
+              >
+            </li>
+            <li class="features__item">
+              <img
+                src="img/check-circle.png"
+                alt="Галочка"
+                class="features__icon"
+              />
+              <span class="features__text"
+                >Создавайте, редактируйте, просматривайте записи</span
+              >
+            </li>
+            <li class="features__item">
+              <img
+                src="img/check-circle.png"
+                alt="Галочка"
+                class="features__icon"
+              />
+              <span class="features__text"
+                >Масштаб журнала записи 5, 10, 15 и 30 минут.</span
+              >
+            </li>
+            <li class="features__item">
+              <img
+                src="img/check-circle.png"
+                alt="Галочка"
+                class="features__icon"
+              />
+              <span class="features__text"
+                >Мотивируйте клиентов приходить чаще и тратить больше</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <img
+          src="img/Заполнение профиля/logomoon 2.png"
+          alt="логотип"
+          class="main__logo"
+        />
+        <h2 class="main__title">Регистрация</h2>
+
+        <form class="main__form">
+          <div class="main__group">
+            <label class="main__label" for="firstName">Имя</label>
+            <input
+              type="text"
+              id="firstName"
+              class="main__input"
+              placeholder="Введите имя"
+            />
+          </div>
+
+          <div class="main__group">
+            <label class="main__label" for="lastName">Фамилия</label>
+            <input
+              type="text"
+              id="lastName"
+              class="main__input"
+              placeholder="Введите фамилию"
+            />
+          </div>
+
+          <div class="main__group">
+            <label class="main__label" for="phone">Номер телефона</label>
+            <input
+              type="tel"
+              id="phone"
+              class="main__input"
+              placeholder="+992 000 000 00-00"
+            />
+          </div>
+
+          <div class="main__group">
+            <label class="main__label" for="email">Электронная почта</label>
+            <input
+              type="email"
+              id="email"
+              class="main__input"
+              placeholder="Введите электронную почту"
+            />
+          </div>
+
+          <!-- 1. Поле "Пароль" с оберткой и глазиком -->
+          <div class="main__group">
+            <label class="main__label" for="password">Пароль</label>
+            <div class="main__password-wrapper">
+              <!-- Добавлен класс main__input--password для правильных отступов -->
+              <input
+                type="password"
+                id="password"
+                class="main__input main__input--password"
+                placeholder="Введите пароль"
+              />
+              <button type="button" class="main__eye-btn">
+                <img
+                  src="img/Icons/Fosfor Icons/Vector.svg"
+                  alt="Показать пароль"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Поле "Подтвердите пароль" с оберткой и глазиком -->
+          <div class="main__group">
+            <label class="main__label" for="confirmPassword"
+              >Подтвердите пароль</label
+            >
+            <div class="main__password-wrapper">
+              <input
+                type="password"
+                id="confirmPassword"
+                class="main__input main__input--password"
+                placeholder="Введите пароль"
+              />
+              <button type="button" class="main__eye-btn">
+                <img
+                  src="img/Icons/Fosfor Icons/Vector.svg"
+                  alt="Показать пароль"
+                />
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="main__button">Зарегистрироваться</button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input" checked />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Нажимая «Зарегистрироваться», вы соглашаетесь на обработку
+              персональных данных и условия сервиса.
+            </span>
+          </label>
+        </form>
+
+        <div class="auth-prompt">
+          <span class="auth-prompt__text">Нет аккаунта?</span>
+          <a href="#" class="auth-prompt__link">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
